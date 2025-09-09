@@ -64,7 +64,7 @@ def has_lost(wrong_count: int, max_wrong: int) -> bool:
 
 
 if __name__ == "__main__":
-    words = [ "java", "javascript"]
+    words = [ "java","kotlin","python","javascript"]
     secret_word = choose_secret_word(words)
     revealed = make_revealed(secret_word)
     guessed_letters: set[str] = set()
@@ -81,9 +81,12 @@ if __name__ == "__main__":
         hit = apply_guess(secret_word, revealed, guessed_letters, wrong_letters, guess)
 
         # 3) miss burns a life
-        if not hit:
+        if hit:
+            print("\n" + format_revealed(revealed))
+        else:
             wrong_count += 1
-            print(f"'{guess}' is not in the word.")
+            print("\nIncorrect!")
+            print(format_revealed(revealed))
 
         # 4) end checks
         if has_won(revealed):
