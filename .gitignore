@@ -56,7 +56,6 @@ coverage.xml
 *.spec
 
 # Editor directories and files
-.vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
@@ -71,8 +70,6 @@ Thumbs.db
 *.sqlite
 
 # Env files
-.env
-.env.*
 
 # Jupyter
 .ipynb_checkpoints
@@ -82,3 +79,5 @@ Thumbs.db
 
 # VS Code debugpy launcher
 debugpy.log
+config.bat
+node_modules
