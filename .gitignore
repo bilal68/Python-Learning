@@ -7,56 +7,6 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-build/
-dist/
-*.egg-info/
-pip-wheel-metadata/
-
-# Virtual environments
-venv/
-env/
-.venv/
-ENV/
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage
-.pytest_cache/
-coverage.xml
-
-# mypy
-.mypy_cache/
-
-# VS Code: ignore other workspace files but keep launch/tasks and extensions
-.vscode/*
-!.vscode/launch.json
-!.vscode/tasks.json
-!.vscode/extensions.json
-
-# Environment variables
-.env
-.env.*
-
-# IDEs and editors
-.idea/
-*.iml
-
-# OS files
-.DS_Store
-
-# Bytecode
-*.pyc
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
 .Python
 build/
 develop-eggs/
